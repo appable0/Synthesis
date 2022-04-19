@@ -29,7 +29,7 @@ public class DungeonCleanup {
                 event.setCanceled(true);
             }
             if (config.cleanupDungeonBlessingStatMessages) {
-                if ((config.cleanupDungeonBlessingMessages && (msg.startsWith("A Blessing of ") || (msg.contains(" has obtained Blessing of ") && msg.endsWith("!")))) || msg.startsWith("DUNGEON BUFF! A Blessing of ") || msg.startsWith("DUNGEON BUFF! You found a Blessing of ") || msg.startsWith("     Grants you ") || msg.startsWith("     Granted you ")) {
+                if ((config.cleanupDungeonBlessingMessages && (msg.startsWith("A Blessing of ") || (msg.contains(" has obtained Blessing of ") && msg.endsWith("!")) || msg.startsWith("DUNGEON BUFF! You found a Blessing of "))) || msg.startsWith("DUNGEON BUFF! A Blessing of ") || msg.startsWith("     Grants you ") || msg.startsWith("     Granted you ")) {
                     event.setCanceled(true);
                 }
             }
